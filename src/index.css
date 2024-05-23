@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.page {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
+  margin-top: -30px;
+  border-bottom: 2px solid #d0d9da;
+}
+
+.header-btn {
+}
+
+.welcome-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.welcome-text > p {
+  font-size: 4em;
+  font-family: Georgia;
+}
+
+.main-page-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.Mealbarbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  width: 20%;
+  border: 2px solid #d0d9da;
+  border-radius: 2%;
+  margin-top: 7%;
+}
+
+.mealbarbtn {
+  width: 200px;
+  height: 100px;
+  font-family: "Franklin Gothic light";
+  font-size: 19px;
+}
+
+.Menu-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columns */
+  grid-template-rows: repeat(4, auto); /* 3 rows, auto height */
+  gap: 20px; /* Space between grid items */
+  padding: 20px; /* Add padding for better spacing */
+  margin-left: 25%;
+  margin-top: -40%;
+}
+
+.dish-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px; /* Fixed width for each grid item */
+  padding: 10px;
+}
+
+.dish-div > p {
+  margin-top: -50px;
+  font-family: Helvetica;
+}
+
+.dish-img {
+  height: 200px;
+  width: 200px;
+}
+
+.dish-img > img {
+  border-radius: 5%;
+}
+
+.qty {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.qty > div {
+  border: none;
+  border-radius: 5%;
+  height: 20px;
+  width: 100px;
+  background-color: #ffbc0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: #ffbc0b;
+  height: 300px;
+  width: 340px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-radius: 3%;
+  margin-left: 35%;
+  margin-top: -40%;
+  z-index: 50;
+  position: relative; /* ENSURES THAT THE Z INDEX IS APPLIED CORRECTLY */
+}
+
+form > input {
+  background: transparent;
+  background-color: #f0d079;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+form > input::placeholder {
+  color: black;
+  background: transparent;
+  border-radius: 37%;
+  font-family: serif;
+}
+
+.form-text {
+  color: rgb(29, 28, 28);
+  font-family: "Franklin Gothic Medium";
+  font-size: 170%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40%;
+  width: 90%;
+  margin-top: 30%;
+}
+
+.checkout-btn {
+  background: rgb(29, 28, 28);
+  color: white;
+  font-family: Helvetica;
+  font-style: italic;
+  font-size: 50%;
+  height: 100px;
+  width: 100px;
+  border-radius: 5%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
