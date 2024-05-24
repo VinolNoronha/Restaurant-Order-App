@@ -79,6 +79,11 @@
   align-items: center;
   width: 250px; /* Fixed width for each grid item */
   padding: 10px;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+    /* Drop shadow */ inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Inner shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
 .dish-div > p {
